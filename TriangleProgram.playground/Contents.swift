@@ -20,24 +20,24 @@ public class Triangle {
     
     var sides: NSSet?
     
-    init(a: Int!, b: Int!, c: Int!) {
+    init(sideA a: Int!, sideB b: Int!, sideC c: Int!) {
         
-        if let a = a, a > 0,
-           let b = b, b > 0,
-           let c = c, c > 0 {
-            self.a = a
-            self.b = b
-            self.c = c
-            
-            sides = [a,b,c]
-            if let sides = sides {
-                evaluate(sides: sides)
-            }
-            
-        } else {
+        guard let a = a, a>0,
+              let b = b, b>0,
+              let c = c, c>0 else {
+                
             //TODO: Exception Handling
-            
+            return //exit method
         }
+        
+        self.a = a
+        self.b = b
+        self.c = c
+        sides = [a,b,c]
+        if let sides = sides {
+            evaluate(sides: sides)
+        }
+        
     }
     
     private func evaluate(sides: NSSet) {
@@ -55,9 +55,9 @@ public class Triangle {
 }
 
 
-var equilateral = Triangle(a: 1, b: 1, c: 1).type
-var isosceles = Triangle(a: 2, b: 1, c: 1).type
-var scalene = Triangle(a: 1, b: 2, c: 3).type
+var equilateral = Triangle(sideA: 1, sideB: 1, sideC: 1).type
+var isosceles = Triangle(sideA: 2, sideB: 1, sideC: 1).type
+var scalene = Triangle(sideA: 1, sideB: 2, sideC: 3).type
 
-var none = Triangle(a: 0, b: 0, c: 0).type
+var none = Triangle(sideA: 0, sideB: 0, sideC: 0).type
 
