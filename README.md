@@ -4,6 +4,6 @@
 
 Open **Code Standards.md** for Code standards :)
 
-**TriangleProgram.Playground/Contents.swift** for Prototyping, although will keep updated with Project :)
+**TriangleProgram.Playground/Contents.swift** for Prototyping, although will keep updated along with Project :)
 
 
