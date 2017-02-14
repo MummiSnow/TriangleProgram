@@ -3,7 +3,9 @@
 - - - -
 ## Fundamentals
 **Clarity at the points of use:** Properties, Methods etc. should be declared once, and be reused where needed.
+
 **Clarity > Brevity:** All developers like to keep naming of methods_variables_classes etc. to a low use of characters, and may seem obvious for them, but usually introduce side-effects for others, who may get confused. Use concise and exact use of words for the specific entity
+
 **Write Documentation:** for larger complexity projects, write documentation for every declaration, insights might be needed for other developers to understand. Depending on which language you are writing in, use its correct documentation process i.e. JavaDoc for java, in this case Use Swift’s [dialect of Markdown](https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/) .
 
 * Whitespaces:
@@ -13,13 +15,16 @@
 ## Naming
 **Avoid Ambiguity:** for a person reading code where the name is used.
 **Leave out needless words:** Every word in a name, should be related to its process. Name _Variables, Parameters and types_ according to their roles
-`var string = “Hello”` ❌
-`var greeting = “Hello”` ✅
-
+```
+var string = “Hello” ❌
+var greeting = “Hello” ✅
+```
 **Compensate for Weak type:** to clarify a parameters role
 
-`func add(_ observer: NSObject, for keyPath: String)`❌
-`func addObserver(_ observer: NSObject, forKeyPath: String)`✅
+```
+func add(_ observer: NSObject, for keyPath: String)❌
+func addObserver(_ observer: NSObject, forKeyPath: String)✅
+```
 
 **Avoid Obscure Terms**: Dont say “Epidermis” if “Skin” will serve the purpose. 
 
@@ -31,9 +36,11 @@
 **Follow case conventions:** Names of types and protocols are `UpperCamelCase`. Everything else is `lowerCamelCase`
 
 **Methods can share a base name:** If methods have the same meaning/process give them the same base name, but wither different parameters
-`func add(_ other: Point)`✅
-`func add(_ other: Shape)`✅
 
+```
+func add(_ other: Point)`✅
+func add(_ other: Shape)`✅
+```
 ```
 //Rebuilds database search index
 func search() {...}❌
