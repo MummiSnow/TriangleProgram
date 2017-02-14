@@ -1,7 +1,9 @@
 # TriangleProgram
 
-Open TriangleProgram.Playground/Contents.swift for Code :)
+**TriangleProject**, is for Code Standards/Metrics tools that is needed, since _playground_ files does not support it, this project has been created specifically for tools to maintain Code standards. Although _TriangleProgram.Playground_, will be used for Fast prototypes :) 
 
-Open Code Standards.md for Code standards that is Prefered :)
+Open **Code Standards.md** for Code standards :)
 
-TriangleProject, is for Code Standards/Metrics tools that is needed, since playground files does not support it, this project has been created specifically for tools to maintain Code standards. Although TriangleProgram.Playground, will be used for Fast prototypes :) 
+Open TriangleProgram.Playground/**Contents.swift** for Code :)
+
+
