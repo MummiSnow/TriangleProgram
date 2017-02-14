@@ -3,7 +3,9 @@
 - - - -
 ## Fundamentals
 **Clarity at the points of use:** Properties, Methods etc. should be declared once, and be reused where needed.
+
 **Clarity > Brevity:** All developers like to keep naming of methods_variables_classes etc. to a low use of characters, and may seem obvious for them, but usually introduce side-effects for others, who may get confused. Use concise and exact use of words for the specific entity
+
 **Write Documentation:** for larger complexity projects, write documentation for every declaration, insights might be needed for other developers to understand. Depending on which language you are writing in, use its correct documentation process i.e. JavaDoc for java, in this case Use Swift’s [dialect of Markdown](https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/) .
 
 * Whitespaces:
@@ -13,6 +15,7 @@
 ## Naming
 **Avoid Ambiguity:** for a person reading code where the name is used.
 **Leave out needless words:** Every word in a name, should be related to its process. Name _Variables, Parameters and types_ according to their roles
+
 `var string = “Hello”` ❌
 `var greeting = “Hello”` ✅
 
