@@ -1,0 +1,14 @@
+disabled_rules:
+- trailing_whitespace
+- todo
+- variable_name
+
+line_length: 200
+
+variable_name_max_length:
+- 40 # warning
+- 60 # error
+
+cyclomatic_complexity:
+- 5 # warning
+- 6 # error
