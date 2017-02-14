@@ -15,14 +15,16 @@
 ## Naming
 **Avoid Ambiguity:** for a person reading code where the name is used.
 **Leave out needless words:** Every word in a name, should be related to its process. Name _Variables, Parameters and types_ according to their roles
-
-`var string = “Hello”` ❌
-`var greeting = “Hello”` ✅
-
+```
+var string = “Hello” ❌
+var greeting = “Hello” ✅
+```
 **Compensate for Weak type:** to clarify a parameters role
 
-`func add(_ observer: NSObject, for keyPath: String)`❌
-`func addObserver(_ observer: NSObject, forKeyPath: String)`✅
+```
+func add(_ observer: NSObject, for keyPath: String)❌
+func addObserver(_ observer: NSObject, forKeyPath: String)✅
+```
 
 **Avoid Obscure Terms**: Dont say “Epidermis” if “Skin” will serve the purpose. 
 
@@ -35,9 +37,10 @@
 
 **Methods can share a base name:** If methods have the same meaning/process give them the same base name, but wither different parameters
 
-`func add(_ other: Point)`✅
-`func add(_ other: Shape)`✅
-
+```
+func add(_ other: Point)`✅
+func add(_ other: Shape)`✅
+```
 ```
 //Rebuilds database search index
 func search() {...}❌
